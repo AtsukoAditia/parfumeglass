@@ -1,0 +1,279 @@
+<div class="container container-dashboard">
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <nav class="navbar navbar-light bg-white">
+                <a href="#" onclick="toProjectList()">
+                    < Kembali</a> <span class="navbar-brand mb-0 h1">Proyek Baru Banget</span>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mb-2">
+            <div class="card">
+                <button class="btn text-left p-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                    aria-controls="collapseOne">
+                    <div class="card-header" id="headingOne">
+                        <span class="mb-0">
+                            <i class="fa fa-folder-open-o" aria-hidden="true"></i> Pekerjaan Tahap Awal
+                        </span>
+                        <span class="float-right text-muted">Durasi: 30 Hari | Progres: 77%</span>
+                    </div>
+                </button>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body p-0">
+                        <table id="tree-table" class="table table-hover table-bordered">
+                            <tbody>
+                                <th>Nama Pekerjaan</th>
+                                <th>Tgl. Mulai</th>
+                                <th>Durasi</th>
+                                <th>Progress</th>
+                                <th>Aksi</th>
+                                <tr data-id="1" data-parent="0" data-level="1">
+                                    <td data-column="name">Pembersihan site</td>
+                                    <td>2022-03-07</td>
+                                    <td>30 Hari</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                          </div>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                            <i class="fa fa-eye" aria-hidden="true"></i> 
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr data-id="2" data-parent="1" data-level="2">
+                                    <td data-column="name">- pacul</td>
+                                    <td>2022-03-08</td>
+                                    <td>5 Hari</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                          </div>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr data-id="2" data-parent="1" data-level="2">
+                                    <td data-column="name">- kampak</td>
+                                    <td>2022-03-08</td>
+                                    <td>6 Hari</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                          </div>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                            <i class="fa fa-eye" aria-hidden="true"></i> 
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr data-id="3" data-parent="1" data-level="2">
+                                    <td data-column="name">- gergaji kayu</td>
+                                    <td>2022-03-08</td>
+                                    <td>8 Hari</td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                          </div>
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#exampleModal">
+                                            <i class="fa fa-eye" aria-hidden="true"></i> 
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mb-2">
+            <div class="card">
+                <button class="btn text-left p-0" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                    aria-controls="collapseTwo">
+                    <div class="card-header" id="headingTwo">
+                        <span class="mb-0">
+                            <i class="fa fa-folder-open-o" aria-hidden="true"></i> Pekerjaan Tahap Akhir
+                        </span>
+                        <span class="float-right text-muted">Durasi: 50 Hari | Progres: 20%</span>
+                    </div>
+                </button>
+
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title" id="exampleModalLabel">Perbarui Detail Pekerjaan</h6>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group"><label for="exampleFormControlSelect1">Penilaian</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Baik</option>
+                                <option>Cukup Baik</option>
+                                <option>Buruk</option>
+                                <option>Sangat Buruk</option>
+                                <option>Absen</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect2">Bobot (%)</label>
+                            <select class="form-control" id="exampleFormControlSelect2">
+                                <option>10%</option>
+                                <option>20%</option>
+                                <option>30%</option>
+                                <option>40%</option>
+                                <option>50%</option>
+                                <option>60%</option>
+                                <option>70%</option>
+                                <option>80%</option>
+                                <option>90%</option>
+                                <option>100%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Catatan</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Foto pekerjaan</label>
+                            <input type="file" class="form-control" id="validatedCustomFile" required>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-block">Update Pekerjaan</button>
+            </form>
+            <hr>
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <h5>Progress History</h5>
+                </div>
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Waktuin</th>
+                                    <th>PIC</th>
+                                    <th>%</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>25/03/22 13:10</td>
+                                    <td>Andra</td>
+                                    <td>30%</td>
+                                </tr>
+                                <tr>
+                                    <td>26/03/22 12:05</td>
+                                    <td>Andre</td>
+                                    <td>40%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+
+// Tree Table
+$(function () {
+    var
+        $table = $('#tree-table'),
+        rows = $table.find('tr');
+
+    rows.each(function (index, row) {
+        var
+            $row = $(row),
+            level = $row.data('level'),
+            id = $row.data('id'),
+            $columnName = $row.find('td[data-column="name"]'),
+            children = $table.find('tr[data-parent="' + id + '"]');
+
+        if (children.length) {
+            var expander = $columnName.prepend('' +
+                '<i class="fa fa-chevron-right" aria-hidden="true"></i>' +
+                '');
+
+            children.hide();
+
+            expander.on('click', function (e) {
+                var $target = $(e.target);
+                if ($target.hasClass('fa-chevron-right')) {
+                    $target
+                        .removeClass('fa-chevron-right')
+                        .addClass('fa fa-chevron-down');
+
+                    children.show();
+                } else {
+                    $target
+                        .removeClass('fa fa-chevron-down')
+                        .addClass('fa fa-chevron-right');
+
+                    reverseHide($table, $row);
+                }
+            });
+        }
+
+        $columnName.prepend('' +
+            '<span class="treegrid-indent" style="width:' + 5 * level + 'px"></span>' +
+            '');
+    });
+
+    // Reverse hide all elements
+    reverseHide = function (table, element) {
+        var
+            $element = $(element),
+            id = $element.data('id'),
+            children = table.find('tr[data-parent="' + id + '"]');
+
+        if (children.length) {
+            children.each(function (i, e) {
+                reverseHide(table, e);
+            });
+
+            $element
+                .find('fa-chevron-down')
+                .removeClass('fa-chevron-down')
+                .addClass('fa fa-chevron-right');
+
+            children.hide();
+        }
+    };
+});
+</script>
